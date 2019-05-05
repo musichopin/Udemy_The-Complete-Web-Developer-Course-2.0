@@ -29,12 +29,12 @@
       <?php } ?>      
       <div class="form-inline pull-xs-right"> <!--form changed to div to not submit-->
         <?php if (isset($_SESSION['id'])) { ?> <!-- set through actions.php -->
-        
+<!-- button gibi görünmesine ragmen linktir ve get requestte bulunur (buttonun get/post requestte bulunması icin search tweets butonu gibi buttonun formun icerisinde bulunması gerekir; post tweet butonu gibi formun içinde bulunmazsa req yapmaz ve ajax request için kullanılabilir) -->        
           <a class="btn btn-success-outline" href="index.php?function=logout">Logout</a>
         
         <?php } else { ?>
         
-          <button class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">Login/Signup</button>
+          <button class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">Login/Signup</button> <!-- footerda modelın devamı var -->
         
         <?php } ?>
       </div>
